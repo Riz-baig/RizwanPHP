@@ -8,6 +8,7 @@
 <body>
     <h1>Cambio IP a Binario</h1>
     <?php 
+    
         $ip="192.18.16.204";
         $inicial = 0;
 
