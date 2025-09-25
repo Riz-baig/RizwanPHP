@@ -1,1 +1,1 @@
-cd "~/desktop/2º daw/deservidor/ejercicios/UT2_01_Strings"
+cd "desktop/2º daw/deservidor/ejercicios/UT2_01_Strings"
