@@ -20,14 +20,18 @@
 <?php
 $valor = 1;
 $suma  = 0;
+$numeros = array();
+$sumas = array();
 
   for ($indice = 0; $indice < 20; $indice++) 
     {
       $suma += $valor;
+      $numeros[$indice] = $valor;
+      $sumas[$indice] = $suma;
       echo "<tr>";
       echo "<td>$indice</td>";//va llenando cada fila de la tabla
-      echo "<td>$valor</td>";
-      echo "<td>$suma</td>"; 
+      echo "<td>$numeros[$indice]</td>";
+      echo "<td>$sumas[$indice]</td>"; 
       echo "</tr>";
       $valor += 2; //el valor aumento de 2 en 2 para que solo sume impares.
     }
