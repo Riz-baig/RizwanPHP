@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    h1 {
+      text-align: center;
+    }
+
+    #campo1,
+    #campo2 {
+      display: flex;
+      flex-direction: row; /* texto + input en fila */
+      align-items: center;
+      margin: 10px 0;
+    }
+
+    #campo1 p,
+    #campo2 p {
+      margin: 0 10px 0 0; /* espacio entre texto e input */
+    }
+  </style>
+  <body>
+    <h1>CALCULADORA</h1>
+    <form action="calculadora.php" method="post">
+    <div>
+      <div id="campo1">
+        <p>Operando1</p>
+        <input type="text" name="operando1" id="operando1" />
+      </div>
+
+      <div id="campo2">
+        <p>Operando2</p>
+        <input type="text" name="operando2" id="operando2" />
+      </div>
+    </div>
+    <div>
+      <p>Selecciona la operación</p>
+
+      <p>Selecciona operación:</p>
+
+      <input type="radio" id="suma" name="operacion" value="suma" checked />
+      <label for="suma">Suma</label><br />
+
+      <input type="radio" id="resta" name="operacion" value="resta" />
+      <label for="resta">Resta</label><br />
+
+      <input type="radio" id="producto" name="operacion" value="producto" />
+      <label for="producto">Producto</label><br />
+
+      <input type="radio" id="division" name="operacion" value="division" />
+      <label for="division">División</label><br /><br />
+
+      <input type="submit" value="enviar" />
+      <input type="reset" value="borrar" />
+      </form>
+    </div>
+  </body>
+</html>
