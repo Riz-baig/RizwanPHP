@@ -1,6 +1,5 @@
 
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $op1 = floatval($_POST["operando1"]);
     $op2 = floatval($_POST["operando2"]);
     $operacion = $_POST["operacion"];
@@ -28,5 +27,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     echo "<h1>Resultado de la operación: $resultado</h1>";
-}
 ?>
