@@ -36,6 +36,6 @@ $sumas = array();
       $valor += 2; //el valor aumento de 2 en 2 para que solo sume impares.
     }
   ?>
-</table>
+
 </body>
 </html>
