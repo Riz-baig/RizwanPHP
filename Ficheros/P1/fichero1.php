@@ -1,4 +1,32 @@
-<?php
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>fichero1</title>
+  </head>
+  <body>
+    <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+      <h1>Formulario</h1>
+      <label for="nombre">Nombre</label>
+      <input type="text" name="nombre" id="nombre" /><br />
+
+      <label for="ape1">Primer apellido</label>
+      <input type="text" name="apellido1" id="ape1" /><br />
+
+      <label for="ape2">Segundo apellido</label>
+      <input type="text" name="apellido2" id="ape2" /><br />
+
+      <label for="fna">Fecha de Nacimiento</label>
+      <input type="text" name="fechaNacimiento" id="fna" /><br />
+
+      <label for="loca">Localidad</label>
+      <input type="text" name="localidad" id="loca" /><br />
+
+      <button type="submit">Enviar</button>
+    </form>
+
+    <?php
 /*Programa fichero1.php: formulario que recoja los datos de alumnos y los almacene un fichero con
 nombre alumnos1.txt (una fila por alumno). Los campos del fichero estarán separados por posiciones:
     Nombre: posición 1 a 40
@@ -13,7 +41,7 @@ Las posiciones no ocupadas se completarán con espacios.*/
 
 if($_SERVER["REQUEST_METHOD"] == "POST") {
 
-$f1 = fopen("fichero1.txt", "a+");
+$f1 = fopen("Alumnos1.txt", "a+");
 
 $nom = test_input($_POST["nombre"]);
 $ape1 = test_input($_POST["apellido1"]);
@@ -50,3 +78,9 @@ function test_input($data) {
   return $data;
 }
 ?>
+  </body>
+</html>
+
+
+
+
